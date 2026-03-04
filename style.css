@@ -1,95 +1,91 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
+margin:0;
+font-family: Arial, sans-serif;
+background:#f4f6f9;
+color:#333;
 }
 
 header {
-    background: linear-gradient(to right, #000, #333);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+background: linear-gradient(to right,#000,#444);
+color:white;
+text-align:center;
+padding:60px 20px;
 }
 
 section {
-    padding: 50px 20px;
-    text-align: center;
+padding:50px 20px;
+text-align:center;
 }
 
-.intro {
-    background: #25D366;
-    color: white;
-}
-
-.services {
-    background: #ffffff;
+.presentation {
+background:#25D366;
+color:white;
 }
 
 .card {
-    background: #fff;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-.commande {
-    background: #eef2f7;
+background:white;
+max-width:400px;
+margin:20px auto;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 form {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: left;
+max-width:500px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:left;
 }
 
 input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0 20px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+width:100%;
+padding:10px;
+margin:10px 0 20px 0;
+border-radius:6px;
+border:1px solid #ccc;
 }
 
 .conditions {
-    margin-bottom: 20px;
+margin-bottom:20px;
 }
 
 .btn {
-    width: 100%;
-    padding: 12px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+display:inline-block;
+padding:12px 20px;
+background:black;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+text-decoration:none;
 }
 
 .btn:hover {
-    background: #333;
+background:#333;
+}
+
+.paiement {
+background:#25D366;
+}
+
+.validation {
+margin-top:20px;
+color:green;
+font-weight:bold;
+font-size:18px;
 }
 
 footer {
-    background: #000;
-    color: white;
-    text-align: center;
-    padding: 30px;
+background:black;
+color:white;
+padding:30px;
 }
 
 .whatsapp-link {
-    display: block;
-    margin-top: 10px;
-    color: #25D366;
-    text-decoration: none;
+color:#25D366;
+text-decoration:none;
 }
