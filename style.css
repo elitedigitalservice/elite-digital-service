@@ -6,54 +6,33 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: #000;
-    color: white;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.btn-nav {
-    background: #25D366;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
     background: linear-gradient(to right, #000, #333);
     color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-.services, .about, .plans {
-    padding: 60px 20px;
+section {
+    padding: 50px 20px;
     text-align: center;
 }
 
-.service-box, .plan, .payment-box {
-    background: white;
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.intro {
+    background: #25D366;
+    color: white;
 }
 
-.premium {
-    border: 2px solid gold;
+.services {
+    background: #ffffff;
+}
+
+.card {
+    background: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 ul {
@@ -61,26 +40,44 @@ ul {
     padding: 0;
 }
 
-ul li {
-    margin: 10px 0;
+.commande {
+    background: #eef2f7;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.conditions {
+    margin-bottom: 20px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 20px;
+    width: 100%;
+    padding: 12px;
     background: black;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .btn:hover {
-    background: #444;
-}
-
-.whatsapp {
-    background: #25D366;
+    background: #333;
 }
 
 footer {
@@ -88,4 +85,11 @@ footer {
     color: white;
     text-align: center;
     padding: 30px;
-    }
+}
+
+.whatsapp-link {
+    display: block;
+    margin-top: 10px;
+    color: #25D366;
+    text-decoration: none;
+}
