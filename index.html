@@ -11,19 +11,21 @@
 
 <header>
 <h1>ELITE DIGITAL SERVICE</h1>
-<p>Votre succès commence par une visibilité puissante 🚀</p>
+<p>Votre réussite commence par une visibilité puissante 🚀</p>
+<a href="#commande" class="btn">Commander un service</a>
 </header>
 
-<section class="presentation">
-<h2>Nous transformons votre produit en marque forte</h2>
-<p>Spécialisé uniquement dans la publicité Facebook professionnelle et la création de logo pour entreprises ambitieuses.</p>
+<section class="about">
+<h2>Agence spécialisée</h2>
+<p>Nous aidons les entreprises ambitieuses à augmenter leurs ventes grâce à des publicités Facebook stratégiques et des logos professionnels.</p>
+<p class="motivation">Votre produit mérite d’être vu. Nous le rendons incontournable.</p>
 </section>
 
 <section class="services">
 <h2>Nos Services</h2>
 
 <div class="card">
-<h3>📢 Publication Facebook</h3>
+<h3>📢 Publicité Facebook</h3>
 <p><strong>Classique</strong> – 2 000 FCFA</p>
 <p><strong>Premium</strong> – 8 000 FCFA</p>
 </div>
@@ -34,11 +36,11 @@
 <p><strong>Premium</strong> – 15 000 FCFA</p>
 </div>
 
-<a href="paiement.html" class="btn paiement">Procéder au paiement</a>
+<a href="#paiement" class="btn paiement">Voir les options de paiement</a>
 </section>
 
-<section class="commande">
-<h2>Commander un service</h2>
+<section id="commande" class="commande">
+<h2>Formulaire de commande</h2>
 
 <form onsubmit="envoyerCommande(); return false;">
 
@@ -51,8 +53,8 @@
 <label>Service choisi :</label>
 <select id="service" required>
 <option value="">Sélectionner</option>
-<option>Publication Facebook - Classique</option>
-<option>Publication Facebook - Premium</option>
+<option>Publicité Facebook - Classique</option>
+<option>Publicité Facebook - Premium</option>
 <option>Logo - Classique</option>
 <option>Logo - Premium</option>
 </select>
@@ -61,30 +63,48 @@
 <textarea id="produit" required></textarea>
 
 <label>Objectif de visibilité :</label>
-<textarea id="objectif" required></textarea>
+<textarea id="objectif" placeholder="Ex: augmenter les ventes, attirer plus de clients..." required></textarea>
 
-<label>Référence :</label>
+<label>Référence (facultatif) :</label>
 <input type="text" id="reference">
 
 <div class="conditions">
 <input type="checkbox" id="accept" required>
-<label>J'accepte les conditions de service</label>
+<label>J’accepte les conditions de service</label>
 </div>
 
-<button type="submit" class="btn">Envoyer la commande sur WhatsApp</button>
+<button type="submit" class="btn">Envoyer sur WhatsApp</button>
 
 </form>
 </section>
 
+<section id="paiement" class="paiement-section">
+<h2>Paiement Orange Money Cameroun</h2>
+
+<div class="card">
+<p><strong>Numéro :</strong> 688032514</p>
+<p><strong>Nom du compte :</strong> KEMENI TANKOU</p>
+</div>
+
+<p>Après le dépôt, envoyez la capture d’écran de la preuve sur WhatsApp.</p>
+
+<a href="https://wa.me/237692053580" class="btn">Envoyer preuve du dépôt</a>
+
+<p class="validation">🟢 Paiement validé après vérification</p>
+
+<p class="conditions-text">
+Conditions : Aucun remboursement après validation. La prestation commence après confirmation du paiement.
+</p>
+</section>
+
 <section class="questions">
 <h2>Une question ?</h2>
-<textarea id="question" placeholder="Écrivez votre question ici..."></textarea>
+<textarea id="question" placeholder="Posez votre question ici..."></textarea>
 <button onclick="envoyerQuestion()" class="btn">Envoyer la question</button>
 </section>
 
 <footer>
 <p>© 2026 ELITE DIGITAL SERVICE - Tous droits réservés</p>
-<a href="https://wa.me/237692053580" class="whatsapp-link">Contact WhatsApp</a>
 </footer>
 
 <script>
@@ -96,7 +116,7 @@ let produit = document.getElementById("produit").value;
 let objectif = document.getElementById("objectif").value;
 let reference = document.getElementById("reference").value;
 
-let message = "Bonjour ELITE DIGITAL SERVICE,%0A%0A"
+let message = "Bonjour Elite Digital Service,%0A%0A"
 + "Nom/Entreprise : " + nom + "%0A"
 + "Ville : " + ville + "%0A"
 + "Service : " + service + "%0A"
@@ -114,4 +134,4 @@ window.open("https://wa.me/237692053580?text=Question:%20" + question);
 </script>
 
 </body>
-</html>
+  </html>
