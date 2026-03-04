@@ -3,133 +3,306 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elite Digital Service</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<title>ELITE DIGITAL SERVICE | Agence Premium</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+<style>
+
+/* ===== GLOBAL ===== */
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+/* ===== HERO ===== */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=2070');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+letter-spacing:3px;
+}
+
+.hero p{
+opacity:0.8;
+max-width:600px;
+}
+
+.btn{
+background:#25D366;
+padding:14px 28px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin-top:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* ===== SERVICES ===== */
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:#1c1c1c;
+padding:30px;
+border-radius:20px;
+width:300px;
+transition:0.4s;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:translateY(-15px);
+}
+
+.card h3{
+color:#25D366;
+}
+
+/* ===== FORM ===== */
+form{
+background:#1c1c1c;
+max-width:700px;
+margin:auto;
+padding:40px;
+border-radius:20px;
+text-align:left;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin-bottom:20px;
+border-radius:10px;
+border:none;
+}
+
+textarea{height:100px;}
+
+.payment{
+background:#1c1c1c;
+padding:30px;
+border-radius:20px;
+max-width:500px;
+margin:auto;
+}
+
+/* ===== SOCIAL FLOAT ===== */
+.social{
+position:fixed;
+right:20px;
+top:40%;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.social a{
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+}
+
+/* ===== CHATBOT ===== */
+.chat{
+position:fixed;
+bottom:20px;
+left:20px;
+width:300px;
+background:#1c1c1c;
+border-radius:20px;
+overflow:hidden;
+}
+
+.chat-header{
+background:#25D366;
+padding:10px;
+font-weight:bold;
+}
+
+.chat-body{
+height:150px;
+overflow-y:auto;
+padding:10px;
+font-size:13px;
+}
+
+.chat-input{
+display:flex;
+}
+
+.chat-input input{
+flex:1;
+border:none;
+padding:8px;
+}
+
+.chat-input button{
+background:#25D366;
+border:none;
+color:white;
+padding:8px;
+}
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+opacity:0.6;
+}
+
+@media(max-width:768px){
+.cards{flex-direction:column;align-items:center;}
+.hero h1{font-size:32px;}
+}
+
+</style>
+</head>
 <body>
 
-<header>
-<h1>ELITE DIGITAL SERVICE</h1>
-<p>Votre réussite commence par une visibilité puissante 🚀</p>
-<a href="#commande" class="btn">Commander un service</a>
-</header>
+<div class="social">
+<a href="https://wa.me/237692053580"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+</div>
 
-<section class="about">
-<h2>Agence spécialisée</h2>
-<p>Nous aidons les entreprises ambitieuses à augmenter leurs ventes grâce à des publicités Facebook stratégiques et des logos professionnels.</p>
-<p class="motivation">Votre produit mérite d’être vu. Nous le rendons incontournable.</p>
-</section>
+<div class="hero">
+<h1>ELITE DIGITAL SERVICE 💎</h1>
+<p>Agence digitale internationale spécialisée en Publicité Facebook stratégique et création de logos professionnels.</p>
+<a href="#commande" class="btn">Démarrer Maintenant</a>
+</div>
 
-<section class="services">
-<h2>Nos Services</h2>
+<section>
+<h2>Nos Solutions Premium</h2>
+<div class="cards">
 
 <div class="card">
 <h3>📢 Publicité Facebook</h3>
 <p><strong>Classique</strong> – 2 000 FCFA</p>
 <p><strong>Premium</strong> – 8 000 FCFA</p>
+<p>Visibilité maximale pour transformer vos visiteurs en clients.</p>
 </div>
 
 <div class="card">
-<h3>🎨 Création de Logo</h3>
+<h3>🎨 Création Logo</h3>
 <p><strong>Classique</strong> – 5 000 FCFA</p>
 <p><strong>Premium</strong> – 15 000 FCFA</p>
+<p>Identité visuelle forte et professionnelle.</p>
 </div>
 
-<a href="#paiement" class="btn paiement">Voir les options de paiement</a>
+</div>
 </section>
 
-<section id="commande" class="commande">
-<h2>Formulaire de commande</h2>
+<section id="commande">
+<h2>Formulaire Professionnel</h2>
 
-<form onsubmit="envoyerCommande(); return false;">
+<form onsubmit="sendOrder(); return false;">
+<input type="text" id="nom" placeholder="Nom client ou entreprise" required>
+<input type="text" id="ville" placeholder="Ville du commerce" required>
 
-<label>Nom du client ou entreprise :</label>
-<input type="text" id="nom" required>
-
-<label>Ville du commerce :</label>
-<input type="text" id="ville" required>
-
-<label>Service choisi :</label>
 <select id="service" required>
-<option value="">Sélectionner</option>
+<option value="">Service choisi</option>
 <option>Publicité Facebook - Classique</option>
 <option>Publicité Facebook - Premium</option>
 <option>Logo - Classique</option>
 <option>Logo - Premium</option>
 </select>
 
-<label>Description du produit :</label>
-<textarea id="produit" required></textarea>
+<textarea id="produit" placeholder="Description du produit" required></textarea>
+<textarea id="objectif" placeholder="Objectif de visibilité" required></textarea>
+<input type="text" id="reference" placeholder="Référence (facultatif)">
 
-<label>Objectif de visibilité :</label>
-<textarea id="objectif" placeholder="Ex: augmenter les ventes, attirer plus de clients..." required></textarea>
+<label><input type="checkbox" required> J'accepte les conditions</label>
 
-<label>Référence (facultatif) :</label>
-<input type="text" id="reference">
-
-<div class="conditions">
-<input type="checkbox" id="accept" required>
-<label>J’accepte les conditions de service</label>
-</div>
-
-<button type="submit" class="btn">Envoyer sur WhatsApp</button>
-
+<button class="btn">Envoyer sur WhatsApp</button>
 </form>
 </section>
 
-<section id="paiement" class="paiement-section">
-<h2>Paiement Orange Money Cameroun</h2>
-
-<div class="card">
-<p><strong>Numéro :</strong> 688032514</p>
-<p><strong>Nom du compte :</strong> KEMENI TANKOU</p>
-</div>
-
-<p>Après le dépôt, envoyez la capture d’écran de la preuve sur WhatsApp.</p>
-
+<section>
+<h2>Paiement Sécurisé</h2>
+<div class="payment">
+<p><strong>Orange Money Cameroun</strong></p>
+<p>Numéro : 688032514</p>
+<p>Nom : KEMENI TANKOU</p>
 <a href="https://wa.me/237692053580" class="btn">Envoyer preuve du dépôt</a>
-
-<p class="validation">🟢 Paiement validé après vérification</p>
-
-<p class="conditions-text">
-Conditions : Aucun remboursement après validation. La prestation commence après confirmation du paiement.
+<p style="font-size:12px;margin-top:15px;">
+Prestation lancée après confirmation. Aucun remboursement après validation.
 </p>
-</section>
-
-<section class="questions">
-<h2>Une question ?</h2>
-<textarea id="question" placeholder="Posez votre question ici..."></textarea>
-<button onclick="envoyerQuestion()" class="btn">Envoyer la question</button>
+</div>
 </section>
 
 <footer>
-<p>© 2026 ELITE DIGITAL SERVICE - Tous droits réservés</p>
+© 2026 ELITE DIGITAL SERVICE | Agence Digitale Internationale
 </footer>
 
+<div class="chat">
+<div class="chat-header">Assistant Elite 🤖</div>
+<div class="chat-body" id="chatBody">
+Bonjour 👋 Posez votre question.
+</div>
+<div class="chat-input">
+<input type="text" id="chatInput">
+<button onclick="chatBot()">Envoyer</button>
+</div>
+</div>
+
 <script>
-function envoyerCommande() {
-let nom = document.getElementById("nom").value;
-let ville = document.getElementById("ville").value;
-let service = document.getElementById("service").value;
-let produit = document.getElementById("produit").value;
-let objectif = document.getElementById("objectif").value;
-let reference = document.getElementById("reference").value;
+function sendOrder(){
+let msg="Bonjour Elite Digital Service,%0A"
++"Nom: "+nom.value+"%0A"
++"Ville: "+ville.value+"%0A"
++"Service: "+service.value+"%0A"
++"Produit: "+produit.value+"%0A"
++"Objectif: "+objectif.value+"%0A"
++"Référence: "+reference.value;
 
-let message = "Bonjour Elite Digital Service,%0A%0A"
-+ "Nom/Entreprise : " + nom + "%0A"
-+ "Ville : " + ville + "%0A"
-+ "Service : " + service + "%0A"
-+ "Produit : " + produit + "%0A"
-+ "Objectif : " + objectif + "%0A"
-+ "Référence : " + reference;
-
-window.open("https://wa.me/237692053580?text=" + message);
+window.open("https://wa.me/237692053580?text="+msg);
 }
 
-function envoyerQuestion() {
-let question = document.getElementById("question").value;
-window.open("https://wa.me/237692053580?text=Question:%20" + question);
+function chatBot(){
+let input=document.getElementById("chatInput").value;
+let body=document.getElementById("chatBody");
+
+body.innerHTML+="<br><b>Vous:</b> "+input;
+
+let response="Merci pour votre message. Pour commander, utilisez le formulaire ci-dessus.";
+
+if(input.toLowerCase().includes("prix")){
+response="Nos tarifs varient entre 2000f et 15000f selon la formule choisie.";
+}
+
+body.innerHTML+="<br><b>Elite:</b> "+response+"<br>";
+chatInput.value="";
 }
 </script>
 
