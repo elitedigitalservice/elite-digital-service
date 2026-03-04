@@ -10,71 +10,65 @@
 <body>
 
 <header>
-    <h1>ELITE DIGITAL SERVICE</h1>
-    <p>Votre partenaire pour des publications Facebook percutantes et des logos professionnels.</p>
+<h1>ELITE DIGITAL SERVICE</h1>
+<p>Votre succès commence par une visibilité puissante 🚀</p>
 </header>
 
-<section class="intro">
-    <h2>Donnez de la valeur à votre image 🚀</h2>
-    <p>Une publication bien conçue attire l’attention.  
-    Un logo professionnel inspire confiance.  
-    Nous vous aidons à développer votre visibilité et à augmenter vos ventes.</p>
+<section class="presentation">
+<h2>Nous transformons votre produit en marque forte</h2>
+<p>Spécialisé uniquement dans la publicité Facebook professionnelle et la création de logo pour entreprises ambitieuses.</p>
 </section>
 
 <section class="services">
-    <h2>Nos Services & Tarifs</h2>
+<h2>Nos Services</h2>
 
-    <div class="card">
-        <h3>📢 Publications Facebook</h3>
-        <ul>
-            <li>1 Publication — 2 000 FCFA</li>
-            <li>3 Publications — 5 000 FCFA</li>
-            <li>5 Publications — 8 000 FCFA</li>
-        </ul>
-    </div>
+<div class="card">
+<h3>📢 Publication Facebook</h3>
+<p><strong>Classique</strong> – 2 000 FCFA</p>
+<p><strong>Premium</strong> – 8 000 FCFA</p>
+</div>
 
-    <div class="card">
-        <h3>🎨 Création de Logo</h3>
-        <ul>
-            <li>Logo standard — 5 000 FCFA</li>
-            <li>Logo premium — 15 000 FCFA</li>
-        </ul>
-    </div>
+<div class="card">
+<h3>🎨 Création de Logo</h3>
+<p><strong>Classique</strong> – 5 000 FCFA</p>
+<p><strong>Premium</strong> – 15 000 FCFA</p>
+</div>
+
+<a href="paiement.html" class="btn paiement">Procéder au paiement</a>
 </section>
 
 <section class="commande">
-    <h2>Passer votre commande</h2>
+<h2>Commander un service</h2>
 
-<form onsubmit="envoyerWhatsApp(); return false;">
+<form onsubmit="envoyerCommande(); return false;">
 
 <label>Nom du client ou entreprise :</label>
 <input type="text" id="nom" required>
 
-<label>Ville :</label>
+<label>Ville du commerce :</label>
 <input type="text" id="ville" required>
 
 <label>Service choisi :</label>
 <select id="service" required>
 <option value="">Sélectionner</option>
-<option>1 Publication - 2 000 FCFA</option>
-<option>3 Publications - 5 000 FCFA</option>
-<option>5 Publications - 8 000 FCFA</option>
-<option>Logo standard - 5 000 FCFA</option>
-<option>Logo premium - 15 000 FCFA</option>
+<option>Publication Facebook - Classique</option>
+<option>Publication Facebook - Premium</option>
+<option>Logo - Classique</option>
+<option>Logo - Premium</option>
 </select>
 
 <label>Description du produit :</label>
-<textarea id="produit" rows="3" required></textarea>
+<textarea id="produit" required></textarea>
 
-<label>Objectif de visibilité sur Facebook :</label>
-<textarea id="objectif" rows="3" required></textarea>
+<label>Objectif de visibilité :</label>
+<textarea id="objectif" required></textarea>
 
-<label>Référence (facultatif) :</label>
+<label>Référence :</label>
 <input type="text" id="reference">
 
 <div class="conditions">
 <input type="checkbox" id="accept" required>
-<label for="accept">J'accepte les conditions de service</label>
+<label>J'accepte les conditions de service</label>
 </div>
 
 <button type="submit" class="btn">Envoyer la commande sur WhatsApp</button>
@@ -82,16 +76,19 @@
 </form>
 </section>
 
+<section class="questions">
+<h2>Une question ?</h2>
+<textarea id="question" placeholder="Écrivez votre question ici..."></textarea>
+<button onclick="envoyerQuestion()" class="btn">Envoyer la question</button>
+</section>
+
 <footer>
 <p>© 2026 ELITE DIGITAL SERVICE - Tous droits réservés</p>
-<a href="https://wa.me/237692053580" class="whatsapp-link">
-Contact direct WhatsApp
-</a>
+<a href="https://wa.me/237692053580" class="whatsapp-link">Contact WhatsApp</a>
 </footer>
 
 <script>
-function envoyerWhatsApp() {
-
+function envoyerCommande() {
 let nom = document.getElementById("nom").value;
 let ville = document.getElementById("ville").value;
 let service = document.getElementById("service").value;
@@ -102,14 +99,19 @@ let reference = document.getElementById("reference").value;
 let message = "Bonjour ELITE DIGITAL SERVICE,%0A%0A"
 + "Nom/Entreprise : " + nom + "%0A"
 + "Ville : " + ville + "%0A"
-+ "Service choisi : " + service + "%0A"
-+ "Description produit : " + produit + "%0A"
-+ "Objectif visibilité : " + objectif + "%0A"
++ "Service : " + service + "%0A"
++ "Produit : " + produit + "%0A"
++ "Objectif : " + objectif + "%0A"
 + "Référence : " + reference;
 
 window.open("https://wa.me/237692053580?text=" + message);
 }
+
+function envoyerQuestion() {
+let question = document.getElementById("question").value;
+window.open("https://wa.me/237692053580?text=Question:%20" + question);
+}
 </script>
 
 </body>
-    </html>
+</html>
